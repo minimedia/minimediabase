@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the minimediabase feature.
+ */
+
+include_once 'minimediabase.features.inc';
