@@ -371,9 +371,8 @@ function minimediabase_user_default_permissions() {
   $permissions['administer menu'] = array(
     'name' => 'administer menu',
     'roles' => array(
-      0 => 'Super admin',
-      1 => 'administrator',
-      2 => 'authenticated user',
+      0 => 'administrator',
+      1 => 'authenticated user',
     ),
     'module' => 'menu',
   );
@@ -541,33 +540,6 @@ function minimediabase_user_default_permissions() {
       0 => 'administrator',
     ),
     'module' => 'views',
-  );
-
-  // Exported permission: assign Editor role.
-  $permissions['assign Editor role'] = array(
-    'name' => 'assign Editor role',
-    'roles' => array(
-      0 => 'administrator',
-    ),
-    'module' => 'role_delegation',
-  );
-
-  // Exported permission: assign Super admin role.
-  $permissions['assign Super admin role'] = array(
-    'name' => 'assign Super admin role',
-    'roles' => array(
-      0 => 'administrator',
-    ),
-    'module' => 'role_delegation',
-  );
-
-  // Exported permission: assign User admin role.
-  $permissions['assign User admin role'] = array(
-    'name' => 'assign User admin role',
-    'roles' => array(
-      0 => 'administrator',
-    ),
-    'module' => 'role_delegation',
   );
 
   // Exported permission: assign all roles.
