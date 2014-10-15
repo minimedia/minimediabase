@@ -277,6 +277,36 @@ function minimediabase_views_default_views() {
 
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');
+  $translatables['find_content'] = array(
+    t('Master'),
+    t('Sök innehåll'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Items per page'),
+    t('- All -'),
+    t('Offset'),
+    t('« first'),
+    t('‹ previous'),
+    t('next ›'),
+    t('last »'),
+    t('Displaying @start - @end of @total'),
+    t('author'),
+    t('Rubrik'),
+    t('Publicerat'),
+    t('Kategori'),
+    t('Användare'),
+    t('Redigera'),
+    t('Brödtext'),
+    t('Ingress'),
+    t('Puffrubrik'),
+    t('Pufftext'),
+    t('Kategori (field_kategori)'),
+    t('Block'),
+  );
   $export['find_content'] = $view;
 
   $view = new view();
@@ -1082,6 +1112,23 @@ function minimediabase_views_default_views() {
   $handler->display->display_options['filters']['field_placering_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_placering_tid']['vocabulary'] = 'placering';
   $handler->display->display_options['block_description'] = 'fyran_2';
+  $translatables['lopsedel'] = array(
+    t('Master'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('start_slider'),
+    t('<span>[field_kategori]</span> [field_pufftext]'),
+    t('start_etta'),
+    t('fyran_1'),
+    t('mini1'),
+    t('mini2'),
+    t('lopsedel'),
+    t('fyran_2'),
+  );
   $export['lopsedel'] = $view;
 
   $view = new view();
@@ -1789,6 +1836,22 @@ function minimediabase_views_default_views() {
   $handler->display->display_options['filters']['field_placering_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_placering_tid']['vocabulary'] = 'placering';
   $handler->display->display_options['block_description'] = 'start_lopsedel';
+  $translatables['lopsedel_start'] = array(
+    t('Master'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('start_slider'),
+    t('<span>[field_kategori]</span> [field_pufftext]'),
+    t('start_etta'),
+    t('start_fyran'),
+    t('start_mini1'),
+    t('start_mini2'),
+    t('start_lopsedel'),
+  );
   $export['lopsedel_start'] = $view;
 
   $view = new view();
@@ -1871,6 +1934,27 @@ function minimediabase_views_default_views() {
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['path'] = 'omkategorisera';
+  $translatables['omkategorisera'] = array(
+    t('Master'),
+    t('omkategorisera'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Items per page'),
+    t('- All -'),
+    t('Offset'),
+    t('« first'),
+    t('‹ previous'),
+    t('next ›'),
+    t('last »'),
+    t('Title'),
+    t('Kategori'),
+    t('Område'),
+    t('Page'),
+  );
   $export['omkategorisera'] = $view;
 
   $view = new view();
@@ -2281,6 +2365,38 @@ function minimediabase_views_default_views() {
   );
   $handler->display->display_options['filters']['field_placering_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_placering_tid']['vocabulary'] = 'placering';
+  $translatables['orderarticles'] = array(
+    t('Master'),
+    t('Slider'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Dra artiklarna i den ordning du vill ha dem. Avsluta genom att trycka på Spara.'),
+    t('Plats'),
+    t('Startsida Löpsedel'),
+    t('Ordna startsidelöp'),
+    t('Startsida Slider'),
+    t('Ordna startside-slider'),
+    t('Startsida Fyran'),
+    t('Ordna startsidefyra'),
+    t('Startsida Mini 1'),
+    t('Ordna startsidemini 1'),
+    t('Startsida Mini 2'),
+    t('Ordna startsidemini 2'),
+    t('Undersida Fyran 1'),
+    t('Ordna undersidesfyra 1'),
+    t('Undersida Mini 1'),
+    t('Ordna undersidemini 1'),
+    t('Undersida Fyran 2'),
+    t('Ordna undersidesfyra 2'),
+    t('Undersida Mini 2'),
+    t('Ordna undersidemini 2'),
+    t('Undersida Löpsedel'),
+    t('Ordna undersidelöp'),
+  );
   $export['orderarticles'] = $view;
 
   $view = new view();
@@ -2409,6 +2525,28 @@ function minimediabase_views_default_views() {
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['nothing']['empty'] = '<p>Här kan du ändra hur artiklarna visas på undersidor</p>';
   $handler->display->display_options['path'] = 'admin/manage/order/articles/under';
+  $translatables['orderarticlesloader'] = array(
+    t('Master'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('<p>Här kan du ändra hur artiklarna visas på undersidor</p>'),
+    t('OrderArticlesStartpageLoader'),
+    t('<p>Här kan du ändra hur artiklarna visas på startsidan</p>'),
+    t('<h2>Ordna artiklar på startsidan</h2>
+<p>Här kan du ändra hur artiklarna visas på startsidan</p>
+<p>&nbsp;</p>'),
+    t('OrderArticlesSubpageLoader'),
+    t('<h2>Ordna artiklar på undersidor</h2>
+<p>Här kan du ändra hur artiklarna visas på undersidor</p>
+<p>&nbsp;</p>
+
+
+'),
+  );
   $export['orderarticlesloader'] = $view;
 
   $view = new view();
@@ -2455,6 +2593,18 @@ function minimediabase_views_default_views() {
 
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');
+  $translatables['recent_images'] = array(
+    t('Master'),
+    t('Recent Images'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Rendered'),
+    t('Block'),
+  );
   $export['recent_images'] = $view;
 
   $view = new view();
@@ -2517,6 +2667,24 @@ function minimediabase_views_default_views() {
 
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');
+  $translatables['senaste_artiklarna'] = array(
+    t('Master'),
+    t('Senaste artiklarna'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Items per page'),
+    t('- All -'),
+    t('Offset'),
+    t('« first'),
+    t('‹ previous'),
+    t('next ›'),
+    t('last »'),
+    t('Block'),
+  );
   $export['senaste_artiklarna'] = $view;
 
   return $export;

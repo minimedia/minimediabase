@@ -13,6 +13,35 @@ function minimediabase_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'admin_menu_source_settings';
+  $strongarm->value = array(
+    1 => array(
+      'source' => '',
+    ),
+    2 => array(
+      'source' => 'menu-editor-menu',
+    ),
+    3 => array(
+      'source' => '',
+    ),
+    7 => array(
+      'source' => '',
+    ),
+    4 => array(
+      'source' => '',
+    ),
+    5 => array(
+      'source' => '',
+    ),
+    6 => array(
+      'source' => '',
+    ),
+  );
+  $export['admin_menu_source_settings'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'ds_extras_contextual';
   $strongarm->value = 0;
   $export['ds_extras_contextual'] = $strongarm;
