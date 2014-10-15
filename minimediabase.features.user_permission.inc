@@ -10,13 +10,22 @@
 function minimediabase_user_default_permissions() {
   $permissions = array();
 
+  // Exported permission: access admin theme.
+  $permissions['access admin theme'] = array(
+    'name' => 'access admin theme',
+    'roles' => array(
+      0 => 'administrator',
+      1 => 'authenticated user',
+    ),
+    'module' => 'admin_theme',
+  );
+
   // Exported permission: access administration menu.
   $permissions['access administration menu'] = array(
     'name' => 'access administration menu',
     'roles' => array(
-      0 => 'Editor',
-      1 => 'administrator',
-      2 => 'authenticated user',
+      0 => 'administrator',
+      1 => 'authenticated user',
     ),
     'module' => 'admin_menu',
   );
@@ -25,9 +34,8 @@ function minimediabase_user_default_permissions() {
   $permissions['access administration pages'] = array(
     'name' => 'access administration pages',
     'roles' => array(
-      0 => 'Editor',
-      1 => 'administrator',
-      2 => 'authenticated user',
+      0 => 'administrator',
+      1 => 'authenticated user',
     ),
     'module' => 'system',
   );
@@ -55,10 +63,9 @@ function minimediabase_user_default_permissions() {
   $permissions['access content'] = array(
     'name' => 'access content',
     'roles' => array(
-      0 => 'Editor',
-      1 => 'administrator',
-      2 => 'anonymous user',
-      3 => 'authenticated user',
+      0 => 'administrator',
+      1 => 'anonymous user',
+      2 => 'authenticated user',
     ),
     'module' => 'node',
   );
@@ -85,9 +92,8 @@ function minimediabase_user_default_permissions() {
   $permissions['access dashboard'] = array(
     'name' => 'access dashboard',
     'roles' => array(
-      0 => 'Editor',
-      1 => 'administrator',
-      2 => 'authenticated user',
+      0 => 'administrator',
+      1 => 'authenticated user',
     ),
     'module' => 'dashboard',
   );
@@ -105,9 +111,8 @@ function minimediabase_user_default_permissions() {
   $permissions['access draggableviews'] = array(
     'name' => 'access draggableviews',
     'roles' => array(
-      0 => 'Editor',
-      1 => 'administrator',
-      2 => 'authenticated user',
+      0 => 'administrator',
+      1 => 'authenticated user',
     ),
     'module' => 'draggableviews',
   );
@@ -116,9 +121,8 @@ function minimediabase_user_default_permissions() {
   $permissions['access media browser'] = array(
     'name' => 'access media browser',
     'roles' => array(
-      0 => 'Editor',
-      1 => 'administrator',
-      2 => 'authenticated user',
+      0 => 'administrator',
+      1 => 'authenticated user',
     ),
     'module' => 'media',
   );
@@ -145,8 +149,7 @@ function minimediabase_user_default_permissions() {
   $permissions['access user profiles'] = array(
     'name' => 'access user profiles',
     'roles' => array(
-      0 => 'User admin',
-      1 => 'administrator',
+      0 => 'administrator',
     ),
     'module' => 'user',
   );
@@ -317,9 +320,8 @@ function minimediabase_user_default_permissions() {
   $permissions['administer google analytics'] = array(
     'name' => 'administer google analytics',
     'roles' => array(
-      0 => 'User admin',
-      1 => 'administrator',
-      2 => 'authenticated user',
+      0 => 'administrator',
+      1 => 'authenticated user',
     ),
     'module' => 'googleanalytics',
   );
@@ -340,6 +342,16 @@ function minimediabase_user_default_permissions() {
       0 => 'administrator',
     ),
     'module' => 'locale',
+  );
+
+  // Exported permission: administer main-menu menu items.
+  $permissions['administer main-menu menu items'] = array(
+    'name' => 'administer main-menu menu items',
+    'roles' => array(
+      0 => 'administrator',
+      1 => 'authenticated user',
+    ),
+    'module' => 'menu_admin_per_menu',
   );
 
   // Exported permission: administer management menu items.
@@ -388,9 +400,8 @@ function minimediabase_user_default_permissions() {
   $permissions['administer meta tags'] = array(
     'name' => 'administer meta tags',
     'roles' => array(
-      0 => 'Editor',
-      1 => 'administrator',
-      2 => 'authenticated user',
+      0 => 'administrator',
+      1 => 'authenticated user',
     ),
     'module' => 'metatag',
   );
@@ -444,8 +455,7 @@ function minimediabase_user_default_permissions() {
   $permissions['administer permissions'] = array(
     'name' => 'administer permissions',
     'roles' => array(
-      0 => 'User admin',
-      1 => 'administrator',
+      0 => 'administrator',
     ),
     'module' => 'user',
   );
@@ -481,9 +491,8 @@ function minimediabase_user_default_permissions() {
   $permissions['administer site configuration'] = array(
     'name' => 'administer site configuration',
     'roles' => array(
-      0 => 'Editor',
-      1 => 'administrator',
-      2 => 'authenticated user',
+      0 => 'administrator',
+      1 => 'authenticated user',
     ),
     'module' => 'system',
   );
@@ -531,6 +540,15 @@ function minimediabase_user_default_permissions() {
       0 => 'administrator',
     ),
     'module' => 'menu_admin_per_menu',
+  );
+
+  // Exported permission: administer users.
+  $permissions['administer users'] = array(
+    'name' => 'administer users',
+    'roles' => array(
+      0 => 'administrator',
+    ),
+    'module' => 'user',
   );
 
   // Exported permission: administer views.
@@ -591,8 +609,7 @@ function minimediabase_user_default_permissions() {
   $permissions['cancel account'] = array(
     'name' => 'cancel account',
     'roles' => array(
-      0 => 'User admin',
-      1 => 'administrator',
+      0 => 'administrator',
     ),
     'module' => 'user',
   );
@@ -601,21 +618,38 @@ function minimediabase_user_default_permissions() {
   $permissions['change own username'] = array(
     'name' => 'change own username',
     'roles' => array(
-      0 => 'User admin',
-      1 => 'administrator',
+      0 => 'administrator',
     ),
     'module' => 'user',
+  );
+
+  // Exported permission: create article content.
+  $permissions['create article content'] = array(
+    'name' => 'create article content',
+    'roles' => array(
+      0 => 'administrator',
+      1 => 'authenticated user',
+    ),
+    'module' => 'node',
   );
 
   // Exported permission: create files.
   $permissions['create files'] = array(
     'name' => 'create files',
     'roles' => array(
-      0 => 'Editor',
-      1 => 'administrator',
-      2 => 'authenticated user',
+      0 => 'administrator',
+      1 => 'authenticated user',
     ),
     'module' => 'file_entity',
+  );
+
+  // Exported permission: create page content.
+  $permissions['create page content'] = array(
+    'name' => 'create page content',
+    'roles' => array(
+      0 => 'administrator',
+    ),
+    'module' => 'node',
   );
 
   // Exported permission: create url aliases.
@@ -634,6 +668,16 @@ function minimediabase_user_default_permissions() {
       0 => 'administrator',
     ),
     'module' => 'shortcut',
+  );
+
+  // Exported permission: delete any article content.
+  $permissions['delete any article content'] = array(
+    'name' => 'delete any article content',
+    'roles' => array(
+      0 => 'administrator',
+      1 => 'authenticated user',
+    ),
+    'module' => 'node',
   );
 
   // Exported permission: delete any audio files.
@@ -661,6 +705,15 @@ function minimediabase_user_default_permissions() {
       0 => 'administrator',
     ),
     'module' => 'file_entity',
+  );
+
+  // Exported permission: delete any page content.
+  $permissions['delete any page content'] = array(
+    'name' => 'delete any page content',
+    'roles' => array(
+      0 => 'administrator',
+    ),
+    'module' => 'node',
   );
 
   // Exported permission: delete any video files.
@@ -735,13 +788,21 @@ function minimediabase_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: delete terms in 1.
+  $permissions['delete terms in 1'] = array(
+    'name' => 'delete terms in 1',
+    'roles' => array(
+      0 => 'administrator',
+    ),
+    'module' => 'taxonomy',
+  );
+
   // Exported permission: delete terms in 2.
   $permissions['delete terms in 2'] = array(
     'name' => 'delete terms in 2',
     'roles' => array(
-      0 => 'Editor',
-      1 => 'administrator',
-      2 => 'authenticated user',
+      0 => 'administrator',
+      1 => 'authenticated user',
     ),
     'module' => 'taxonomy',
   );
@@ -843,6 +904,16 @@ function minimediabase_user_default_permissions() {
     'module' => 'file_entity',
   );
 
+  // Exported permission: edit any article content.
+  $permissions['edit any article content'] = array(
+    'name' => 'edit any article content',
+    'roles' => array(
+      0 => 'administrator',
+      1 => 'authenticated user',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: edit any audio files.
   $permissions['edit any audio files'] = array(
     'name' => 'edit any audio files',
@@ -868,6 +939,15 @@ function minimediabase_user_default_permissions() {
       0 => 'administrator',
     ),
     'module' => 'file_entity',
+  );
+
+  // Exported permission: edit any page content.
+  $permissions['edit any page content'] = array(
+    'name' => 'edit any page content',
+    'roles' => array(
+      0 => 'administrator',
+    ),
+    'module' => 'node',
   );
 
   // Exported permission: edit any video files.
@@ -960,13 +1040,21 @@ function minimediabase_user_default_permissions() {
     'module' => 'file_entity',
   );
 
+  // Exported permission: edit terms in 1.
+  $permissions['edit terms in 1'] = array(
+    'name' => 'edit terms in 1',
+    'roles' => array(
+      0 => 'administrator',
+    ),
+    'module' => 'taxonomy',
+  );
+
   // Exported permission: edit terms in 2.
   $permissions['edit terms in 2'] = array(
     'name' => 'edit terms in 2',
     'roles' => array(
-      0 => 'Editor',
-      1 => 'administrator',
-      2 => 'authenticated user',
+      0 => 'administrator',
+      1 => 'authenticated user',
     ),
     'module' => 'taxonomy',
   );
@@ -1077,6 +1165,15 @@ function minimediabase_user_default_permissions() {
     'module' => 'override_node_options',
   );
 
+  // Exported permission: override article published option.
+  $permissions['override article published option'] = array(
+    'name' => 'override article published option',
+    'roles' => array(
+      0 => 'administrator',
+    ),
+    'module' => 'override_node_options',
+  );
+
   // Exported permission: override article revision option.
   $permissions['override article revision option'] = array(
     'name' => 'override article revision option',
@@ -1116,6 +1213,15 @@ function minimediabase_user_default_permissions() {
   // Exported permission: override page promote to front page option.
   $permissions['override page promote to front page option'] = array(
     'name' => 'override page promote to front page option',
+    'roles' => array(
+      0 => 'administrator',
+    ),
+    'module' => 'override_node_options',
+  );
+
+  // Exported permission: override page published option.
+  $permissions['override page published option'] = array(
+    'name' => 'override page published option',
     'roles' => array(
       0 => 'administrator',
     ),
@@ -1163,9 +1269,8 @@ function minimediabase_user_default_permissions() {
   $permissions['search content'] = array(
     'name' => 'search content',
     'roles' => array(
-      0 => 'Editor',
-      1 => 'administrator',
-      2 => 'authenticated user',
+      0 => 'administrator',
+      1 => 'authenticated user',
     ),
     'module' => 'search',
   );
@@ -1174,8 +1279,7 @@ function minimediabase_user_default_permissions() {
   $permissions['select account cancellation method'] = array(
     'name' => 'select account cancellation method',
     'roles' => array(
-      0 => 'User admin',
-      1 => 'administrator',
+      0 => 'administrator',
     ),
     'module' => 'user',
   );
@@ -1255,10 +1359,9 @@ function minimediabase_user_default_permissions() {
   $permissions['use text format filtered_html'] = array(
     'name' => 'use text format filtered_html',
     'roles' => array(
-      0 => 'Editor',
-      1 => 'administrator',
-      2 => 'anonymous user',
-      3 => 'authenticated user',
+      0 => 'administrator',
+      1 => 'anonymous user',
+      2 => 'authenticated user',
     ),
     'module' => 'filter',
   );
@@ -1267,9 +1370,8 @@ function minimediabase_user_default_permissions() {
   $permissions['use text format full_html'] = array(
     'name' => 'use text format full_html',
     'roles' => array(
-      0 => 'Editor',
-      1 => 'administrator',
-      2 => 'authenticated user',
+      0 => 'administrator',
+      1 => 'authenticated user',
     ),
     'module' => 'filter',
   );
@@ -1281,9 +1383,28 @@ function minimediabase_user_default_permissions() {
     'module' => 'filter',
   );
 
+  // Exported permission: view any unpublished article content.
+  $permissions['view any unpublished article content'] = array(
+    'name' => 'view any unpublished article content',
+    'roles' => array(
+      0 => 'administrator',
+      1 => 'authenticated user',
+    ),
+    'module' => 'view_unpublished',
+  );
+
   // Exported permission: view any unpublished content.
   $permissions['view any unpublished content'] = array(
     'name' => 'view any unpublished content',
+    'roles' => array(
+      0 => 'administrator',
+    ),
+    'module' => 'view_unpublished',
+  );
+
+  // Exported permission: view any unpublished page content.
+  $permissions['view any unpublished page content'] = array(
+    'name' => 'view any unpublished page content',
     'roles' => array(
       0 => 'administrator',
     ),
@@ -1294,11 +1415,9 @@ function minimediabase_user_default_permissions() {
   $permissions['view files'] = array(
     'name' => 'view files',
     'roles' => array(
-      0 => 'Editor',
-      1 => 'User admin',
-      2 => 'administrator',
-      3 => 'anonymous user',
-      4 => 'authenticated user',
+      0 => 'administrator',
+      1 => 'anonymous user',
+      2 => 'authenticated user',
     ),
     'module' => 'file_entity',
   );
@@ -1307,9 +1426,8 @@ function minimediabase_user_default_permissions() {
   $permissions['view own files'] = array(
     'name' => 'view own files',
     'roles' => array(
-      0 => 'Editor',
-      1 => 'administrator',
-      2 => 'authenticated user',
+      0 => 'administrator',
+      1 => 'authenticated user',
     ),
     'module' => 'file_entity',
   );
@@ -1318,11 +1436,20 @@ function minimediabase_user_default_permissions() {
   $permissions['view own private files'] = array(
     'name' => 'view own private files',
     'roles' => array(
-      0 => 'Editor',
-      1 => 'administrator',
-      2 => 'authenticated user',
+      0 => 'administrator',
+      1 => 'authenticated user',
     ),
     'module' => 'file_entity',
+  );
+
+  // Exported permission: view own unpublished content.
+  $permissions['view own unpublished content'] = array(
+    'name' => 'view own unpublished content',
+    'roles' => array(
+      0 => 'administrator',
+      1 => 'authenticated user',
+    ),
+    'module' => 'node',
   );
 
   // Exported permission: view private files.
@@ -1347,9 +1474,8 @@ function minimediabase_user_default_permissions() {
   $permissions['view the administration theme'] = array(
     'name' => 'view the administration theme',
     'roles' => array(
-      0 => 'Editor',
-      1 => 'administrator',
-      2 => 'authenticated user',
+      0 => 'administrator',
+      1 => 'authenticated user',
     ),
     'module' => 'system',
   );
