@@ -13,31 +13,65 @@ function minimediabase_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'admin_menu_source_settings';
+  $strongarm->name = 'bakery_domain';
+  $strongarm->value = 'minimedia.se';
+  $export['bakery_domain'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'bakery_freshness';
+  $strongarm->value = '3600';
+  $export['bakery_freshness'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'bakery_help_text';
+  $strongarm->value = 'Otherwise you can contact the site administrators.';
+  $export['bakery_help_text'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'bakery_is_master';
+  $strongarm->value = 0;
+  $export['bakery_is_master'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'bakery_key';
+  $strongarm->value = 'BE384DAB3BF53316C64BE66CFB29D';
+  $export['bakery_key'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'bakery_master';
+  $strongarm->value = 'http://bakery.minimedia.se/';
+  $export['bakery_master'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'bakery_slaves';
+  $strongarm->value = array();
+  $export['bakery_slaves'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'bakery_supported_fields';
   $strongarm->value = array(
-    1 => array(
-      'source' => '',
-    ),
-    2 => array(
-      'source' => 'menu-editor-menu',
-    ),
-    3 => array(
-      'source' => '',
-    ),
-    7 => array(
-      'source' => '',
-    ),
-    4 => array(
-      'source' => '',
-    ),
-    5 => array(
-      'source' => '',
-    ),
-    6 => array(
-      'source' => '',
-    ),
+    'name' => 'name',
+    'mail' => 'mail',
+    'status' => 'status',
+    'picture' => 0,
+    'language' => 0,
+    'signature' => 0,
   );
-  $export['admin_menu_source_settings'] = $strongarm;
+  $export['bakery_supported_fields'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
