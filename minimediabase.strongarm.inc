@@ -21,7 +21,7 @@ function minimediabase_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'bakery_freshness';
-  $strongarm->value = '3600';
+  $strongarm->value = '28800';
   $export['bakery_freshness'] = $strongarm;
 
   $strongarm = new stdClass();
