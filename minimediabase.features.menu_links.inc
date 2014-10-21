@@ -44,7 +44,7 @@ function minimediabase_menu_default_menu_links() {
     'external' => '0',
     'has_children' => '0',
     'expanded' => '0',
-    'weight' => '-42',
+    'weight' => '-41',
   );
   // Exported menu link: menu-editor-menu:admin/config/system/site-information
   $menu_links['menu-editor-menu:admin/config/system/site-information'] = array(
@@ -136,6 +136,24 @@ function minimediabase_menu_default_menu_links() {
     'expanded' => '0',
     'weight' => '-46',
   );
+  // Exported menu link: menu-editor-menu:admin/settings/platformoptions
+  $menu_links['menu-editor-menu:admin/settings/platformoptions'] = array(
+    'menu_name' => 'menu-editor-menu',
+    'link_path' => 'admin/settings/platformoptions',
+    'router_path' => 'admin/settings/platformoptions',
+    'link_title' => 'Kampanjinställningar',
+    'options' => array(
+      'attributes' => array(
+        'title' => '',
+      ),
+    ),
+    'module' => 'menu',
+    'hidden' => '0',
+    'external' => '0',
+    'has_children' => '0',
+    'expanded' => '0',
+    'weight' => '-42',
+  );
   // Exported menu link: menu-editor-menu:admin/structure/menu/manage/main-menu
   $menu_links['menu-editor-menu:admin/structure/menu/manage/main-menu'] = array(
     'menu_name' => 'menu-editor-menu',
@@ -189,10 +207,11 @@ function minimediabase_menu_default_menu_links() {
     'external' => '0',
     'has_children' => '0',
     'expanded' => '0',
-    'weight' => '-41',
+    'weight' => '-40',
   );
   // Translatables
   // Included for use with string extractors like potx.
+  t('Kampanjinställningar');
   t('Lista artiklar');
   t('Logga ut');
   t('Ordna startsida');
