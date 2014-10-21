@@ -460,6 +460,15 @@ function minimediabase_user_default_permissions() {
     'module' => 'user',
   );
 
+  // Exported permission: administer platformoptions.
+  $permissions['administer platformoptions'] = array(
+    'name' => 'administer platformoptions',
+    'roles' => array(
+      0 => 'authenticated user',
+    ),
+    'module' => 'platformoptions',
+  );
+
   // Exported permission: administer redirects.
   $permissions['administer redirects'] = array(
     'name' => 'administer redirects',
