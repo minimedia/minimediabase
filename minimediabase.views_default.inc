@@ -40,7 +40,7 @@ function minimediabase_views_default_views() {
     'created' => 'created',
     'field_kategori' => 'field_kategori',
     'name' => 'name',
-  );
+    );
   $handler->display->display_options['style_options']['default'] = '-1';
   $handler->display->display_options['style_options']['info'] = array(
     'title' => array(
@@ -49,29 +49,29 @@ function minimediabase_views_default_views() {
       'align' => '',
       'separator' => '',
       'empty_column' => 0,
-    ),
+      ),
     'created' => array(
       'sortable' => 1,
       'default_sort_order' => 'asc',
       'align' => '',
       'separator' => '',
       'empty_column' => 0,
-    ),
+      ),
     'field_kategori' => array(
       'sortable' => 1,
       'default_sort_order' => 'asc',
       'align' => '',
       'separator' => '',
       'empty_column' => 0,
-    ),
+      ),
     'name' => array(
       'sortable' => 1,
       'default_sort_order' => 'asc',
       'align' => '',
       'separator' => '',
       'empty_column' => 0,
-    ),
-  );
+      ),
+    );
   /* Header: Global: Result summary */
   $handler->display->display_options['header']['result']['id'] = 'result';
   $handler->display->display_options['header']['result']['table'] = 'views';
@@ -133,14 +133,14 @@ function minimediabase_views_default_views() {
     4 => 0,
     5 => 0,
     6 => 0,
-  );
+    );
   /* Filter criterion: Content: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'article' => 'article',
-  );
+    );
   /* Filter criterion: Content: Brödtext (body) */
   $handler->display->display_options['filters']['body_value']['id'] = 'body_value';
   $handler->display->display_options['filters']['body_value']['table'] = 'field_data_body';
@@ -159,7 +159,7 @@ function minimediabase_views_default_views() {
     4 => 0,
     5 => 0,
     6 => 0,
-  );
+    );
   /* Filter criterion: Content: Ingress (field_ingress) */
   $handler->display->display_options['filters']['field_ingress_value']['id'] = 'field_ingress_value';
   $handler->display->display_options['filters']['field_ingress_value']['table'] = 'field_data_field_ingress';
@@ -178,7 +178,7 @@ function minimediabase_views_default_views() {
     4 => 0,
     5 => 0,
     6 => 0,
-  );
+    );
   /* Filter criterion: Content: Puffrubrik (field_puffrubrik) */
   $handler->display->display_options['filters']['field_puffrubrik_value']['id'] = 'field_puffrubrik_value';
   $handler->display->display_options['filters']['field_puffrubrik_value']['table'] = 'field_data_field_puffrubrik';
@@ -197,7 +197,7 @@ function minimediabase_views_default_views() {
     4 => 0,
     5 => 0,
     6 => 0,
-  );
+    );
   /* Filter criterion: Content: Pufftext (field_pufftext) */
   $handler->display->display_options['filters']['field_pufftext_value']['id'] = 'field_pufftext_value';
   $handler->display->display_options['filters']['field_pufftext_value']['table'] = 'field_data_field_pufftext';
@@ -216,7 +216,7 @@ function minimediabase_views_default_views() {
     4 => 0,
     5 => 0,
     6 => 0,
-  );
+    );
   /* Filter criterion: Content: Title */
   $handler->display->display_options['filters']['title']['id'] = 'title';
   $handler->display->display_options['filters']['title']['table'] = 'node';
@@ -235,7 +235,7 @@ function minimediabase_views_default_views() {
     4 => 0,
     5 => 0,
     6 => 0,
-  );
+    );
   /* Filter criterion: Field: Kategori (field_kategori) */
   $handler->display->display_options['filters']['field_kategori_tid']['id'] = 'field_kategori_tid';
   $handler->display->display_options['filters']['field_kategori_tid']['table'] = 'field_data_field_kategori';
@@ -251,7 +251,7 @@ function minimediabase_views_default_views() {
     3 => 0,
     4 => 0,
     5 => 0,
-  );
+    );
   $handler->display->display_options['filters']['field_kategori_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_kategori_tid']['vocabulary'] = 'kategori';
   /* Filter criterion: User: Name */
@@ -273,7 +273,7 @@ function minimediabase_views_default_views() {
     4 => 0,
     5 => 0,
     6 => 0,
-  );
+    );
 
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');
@@ -306,7 +306,7 @@ function minimediabase_views_default_views() {
     t('Pufftext'),
     t('Kategori (field_kategori)'),
     t('Block'),
-  );
+    );
   $export['find_content'] = $view;
 
   $view = new view();
@@ -349,7 +349,7 @@ function minimediabase_views_default_views() {
   $handler->display->display_options['fields']['field_image']['settings'] = array(
     'image_style' => '',
     'image_link' => '',
-  );
+    );
   /* Field: Content: Puffrubrik */
   $handler->display->display_options['fields']['field_puffrubrik']['id'] = 'field_puffrubrik';
   $handler->display->display_options['fields']['field_puffrubrik']['table'] = 'field_data_field_puffrubrik';
@@ -391,7 +391,7 @@ function minimediabase_views_default_views() {
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'article' => 'article',
-  );
+    );
   /* Filter criterion: Content: Placering (field_placering) */
   $handler->display->display_options['filters']['field_placering_tid']['id'] = 'field_placering_tid';
   $handler->display->display_options['filters']['field_placering_tid']['table'] = 'field_data_field_placering';
@@ -415,7 +415,7 @@ function minimediabase_views_default_views() {
     'module' => 'views_slideshow',
     'path' => '',
     'stylesheets' => array(),
-  );
+    );
   $handler->display->display_options['style_options']['widgets']['top']['views_slideshow_pager']['weight'] = '1';
   $handler->display->display_options['style_options']['widgets']['top']['views_slideshow_pager']['type'] = 'views_slideshow_pager_fields';
   $handler->display->display_options['style_options']['widgets']['top']['views_slideshow_pager']['views_slideshow_pager_fields_fields'] = array(
@@ -423,7 +423,7 @@ function minimediabase_views_default_views() {
     'field_image' => 0,
     'field_kategori' => 0,
     'field_puffrubrik' => 0,
-  );
+    );
   $handler->display->display_options['style_options']['widgets']['top']['views_slideshow_controls']['weight'] = '1';
   $handler->display->display_options['style_options']['widgets']['top']['views_slideshow_controls']['type'] = 'views_slideshow_controls_text';
   $handler->display->display_options['style_options']['widgets']['top']['views_slideshow_slide_counter']['weight'] = '1';
@@ -434,7 +434,7 @@ function minimediabase_views_default_views() {
     'field_image' => 0,
     'field_kategori' => 0,
     'field_puffrubrik' => 0,
-  );
+    );
   $handler->display->display_options['style_options']['widgets']['bottom']['views_slideshow_controls']['weight'] = '1';
   $handler->display->display_options['style_options']['widgets']['bottom']['views_slideshow_controls']['type'] = 'views_slideshow_controls_text';
   $handler->display->display_options['style_options']['widgets']['bottom']['views_slideshow_slide_counter']['weight'] = '1';
@@ -479,7 +479,7 @@ function minimediabase_views_default_views() {
   $handler->display->display_options['fields']['field_image']['settings'] = array(
     'image_style' => 'start_slider',
     'image_link' => 'content',
-  );
+    );
   /* Field: Field: Kategori */
   $handler->display->display_options['fields']['field_kategori']['id'] = 'field_kategori';
   $handler->display->display_options['fields']['field_kategori']['table'] = 'field_data_field_kategori';
@@ -516,14 +516,14 @@ function minimediabase_views_default_views() {
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'article' => 'article',
-  );
+    );
   /* Filter criterion: Content: Placering (field_placering) */
   $handler->display->display_options['filters']['field_placering_tid']['id'] = 'field_placering_tid';
   $handler->display->display_options['filters']['field_placering_tid']['table'] = 'field_data_field_placering';
   $handler->display->display_options['filters']['field_placering_tid']['field'] = 'field_placering_tid';
   $handler->display->display_options['filters']['field_placering_tid']['value'] = array(
     6 => '6',
-  );
+    );
   $handler->display->display_options['filters']['field_placering_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_placering_tid']['vocabulary'] = 'placering';
   $handler->display->display_options['block_description'] = 'start_slider';
@@ -571,7 +571,7 @@ function minimediabase_views_default_views() {
   $handler->display->display_options['fields']['field_image']['settings'] = array(
     'image_style' => 'start_etta',
     'image_link' => 'content',
-  );
+    );
   /* Field: Content: Puffrubrik */
   $handler->display->display_options['fields']['field_puffrubrik']['id'] = 'field_puffrubrik';
   $handler->display->display_options['fields']['field_puffrubrik']['table'] = 'field_data_field_puffrubrik';
@@ -622,14 +622,14 @@ function minimediabase_views_default_views() {
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'article' => 'article',
-  );
+    );
   /* Filter criterion: Content: Placering (field_placering) */
   $handler->display->display_options['filters']['field_placering_tid']['id'] = 'field_placering_tid';
   $handler->display->display_options['filters']['field_placering_tid']['table'] = 'field_data_field_placering';
   $handler->display->display_options['filters']['field_placering_tid']['field'] = 'field_placering_tid';
   $handler->display->display_options['filters']['field_placering_tid']['value'] = array(
     7 => '7',
-  );
+    );
   $handler->display->display_options['filters']['field_placering_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_placering_tid']['vocabulary'] = 'placering';
   $handler->display->display_options['block_description'] = 'start_etta';
@@ -671,7 +671,7 @@ function minimediabase_views_default_views() {
   $handler->display->display_options['fields']['field_image']['settings'] = array(
     'image_style' => 'fyran',
     'image_link' => 'content',
-  );
+    );
   /* Field: Content: Puffrubrik */
   $handler->display->display_options['fields']['field_puffrubrik']['id'] = 'field_puffrubrik';
   $handler->display->display_options['fields']['field_puffrubrik']['table'] = 'field_data_field_puffrubrik';
@@ -720,14 +720,14 @@ function minimediabase_views_default_views() {
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'article' => 'article',
-  );
+    );
   /* Filter criterion: Content: Placering (field_placering) */
   $handler->display->display_options['filters']['field_placering_tid']['id'] = 'field_placering_tid';
   $handler->display->display_options['filters']['field_placering_tid']['table'] = 'field_data_field_placering';
   $handler->display->display_options['filters']['field_placering_tid']['field'] = 'field_placering_tid';
   $handler->display->display_options['filters']['field_placering_tid']['value'] = array(
     12 => '12',
-  );
+    );
   $handler->display->display_options['filters']['field_placering_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_placering_tid']['vocabulary'] = 'placering';
   $handler->display->display_options['block_description'] = 'fyran_1';
@@ -773,7 +773,7 @@ function minimediabase_views_default_views() {
   $handler->display->display_options['fields']['field_image']['settings'] = array(
     'image_style' => 'mini',
     'image_link' => 'content',
-  );
+    );
   /* Field: Field: Kategori */
   $handler->display->display_options['fields']['field_kategori']['id'] = 'field_kategori';
   $handler->display->display_options['fields']['field_kategori']['table'] = 'field_data_field_kategori';
@@ -811,14 +811,14 @@ function minimediabase_views_default_views() {
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'article' => 'article',
-  );
+    );
   /* Filter criterion: Content: Placering (field_placering) */
   $handler->display->display_options['filters']['field_placering_tid']['id'] = 'field_placering_tid';
   $handler->display->display_options['filters']['field_placering_tid']['table'] = 'field_data_field_placering';
   $handler->display->display_options['filters']['field_placering_tid']['field'] = 'field_placering_tid';
   $handler->display->display_options['filters']['field_placering_tid']['value'] = array(
     13 => '13',
-  );
+    );
   $handler->display->display_options['filters']['field_placering_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_placering_tid']['vocabulary'] = 'placering';
   $handler->display->display_options['block_description'] = 'mini1';
@@ -864,7 +864,7 @@ function minimediabase_views_default_views() {
   $handler->display->display_options['fields']['field_image']['settings'] = array(
     'image_style' => 'mini',
     'image_link' => 'content',
-  );
+    );
   /* Field: Field: Kategori */
   $handler->display->display_options['fields']['field_kategori']['id'] = 'field_kategori';
   $handler->display->display_options['fields']['field_kategori']['table'] = 'field_data_field_kategori';
@@ -902,14 +902,14 @@ function minimediabase_views_default_views() {
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'article' => 'article',
-  );
+    );
   /* Filter criterion: Content: Placering (field_placering) */
   $handler->display->display_options['filters']['field_placering_tid']['id'] = 'field_placering_tid';
   $handler->display->display_options['filters']['field_placering_tid']['table'] = 'field_data_field_placering';
   $handler->display->display_options['filters']['field_placering_tid']['field'] = 'field_placering_tid';
   $handler->display->display_options['filters']['field_placering_tid']['value'] = array(
     14 => '14',
-  );
+    );
   $handler->display->display_options['filters']['field_placering_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_placering_tid']['vocabulary'] = 'placering';
   $handler->display->display_options['block_description'] = 'mini2';
@@ -953,7 +953,7 @@ function minimediabase_views_default_views() {
   $handler->display->display_options['fields']['field_image']['settings'] = array(
     'image_style' => 'lopsedel',
     'image_link' => 'content',
-  );
+    );
   /* Field: Content: Puffrubrik */
   $handler->display->display_options['fields']['field_puffrubrik']['id'] = 'field_puffrubrik';
   $handler->display->display_options['fields']['field_puffrubrik']['table'] = 'field_data_field_puffrubrik';
@@ -1003,14 +1003,14 @@ function minimediabase_views_default_views() {
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'article' => 'article',
-  );
+    );
   /* Filter criterion: Content: Placering (field_placering) */
   $handler->display->display_options['filters']['field_placering_tid']['id'] = 'field_placering_tid';
   $handler->display->display_options['filters']['field_placering_tid']['table'] = 'field_data_field_placering';
   $handler->display->display_options['filters']['field_placering_tid']['field'] = 'field_placering_tid';
   $handler->display->display_options['filters']['field_placering_tid']['value'] = array(
     16 => '16',
-  );
+    );
   $handler->display->display_options['filters']['field_placering_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_placering_tid']['vocabulary'] = 'placering';
   $handler->display->display_options['block_description'] = 'lopsedel';
@@ -1052,7 +1052,7 @@ function minimediabase_views_default_views() {
   $handler->display->display_options['fields']['field_image']['settings'] = array(
     'image_style' => 'fyran',
     'image_link' => 'content',
-  );
+    );
   /* Field: Content: Puffrubrik */
   $handler->display->display_options['fields']['field_puffrubrik']['id'] = 'field_puffrubrik';
   $handler->display->display_options['fields']['field_puffrubrik']['table'] = 'field_data_field_puffrubrik';
@@ -1101,14 +1101,14 @@ function minimediabase_views_default_views() {
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'article' => 'article',
-  );
+    );
   /* Filter criterion: Content: Placering (field_placering) */
   $handler->display->display_options['filters']['field_placering_tid']['id'] = 'field_placering_tid';
   $handler->display->display_options['filters']['field_placering_tid']['table'] = 'field_data_field_placering';
   $handler->display->display_options['filters']['field_placering_tid']['field'] = 'field_placering_tid';
   $handler->display->display_options['filters']['field_placering_tid']['value'] = array(
     15 => '15',
-  );
+    );
   $handler->display->display_options['filters']['field_placering_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_placering_tid']['vocabulary'] = 'placering';
   $handler->display->display_options['block_description'] = 'fyran_2';
@@ -1128,7 +1128,7 @@ function minimediabase_views_default_views() {
     t('mini2'),
     t('lopsedel'),
     t('fyran_2'),
-  );
+    );
   $export['lopsedel'] = $view;
 
   $view = new view();
@@ -1171,7 +1171,7 @@ function minimediabase_views_default_views() {
   $handler->display->display_options['fields']['field_image']['settings'] = array(
     'image_style' => '',
     'image_link' => '',
-  );
+    );
   /* Field: Content: Puffrubrik */
   $handler->display->display_options['fields']['field_puffrubrik']['id'] = 'field_puffrubrik';
   $handler->display->display_options['fields']['field_puffrubrik']['table'] = 'field_data_field_puffrubrik';
@@ -1213,7 +1213,7 @@ function minimediabase_views_default_views() {
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'article' => 'article',
-  );
+    );
   /* Filter criterion: Content: Placering (field_placering) */
   $handler->display->display_options['filters']['field_placering_tid']['id'] = 'field_placering_tid';
   $handler->display->display_options['filters']['field_placering_tid']['table'] = 'field_data_field_placering';
@@ -1237,7 +1237,7 @@ function minimediabase_views_default_views() {
     'module' => 'views_slideshow',
     'path' => '',
     'stylesheets' => array(),
-  );
+    );
   $handler->display->display_options['style_options']['widgets']['top']['views_slideshow_pager']['weight'] = '1';
   $handler->display->display_options['style_options']['widgets']['top']['views_slideshow_controls']['weight'] = '1';
   $handler->display->display_options['style_options']['widgets']['top']['views_slideshow_controls']['type'] = 'views_slideshow_controls_text';
@@ -1300,7 +1300,7 @@ function minimediabase_views_default_views() {
   $handler->display->display_options['fields']['field_image']['settings'] = array(
     'image_style' => 'start_slider',
     'image_link' => 'content',
-  );
+    );
   /* Field: Field: Kategori */
   $handler->display->display_options['fields']['field_kategori']['id'] = 'field_kategori';
   $handler->display->display_options['fields']['field_kategori']['table'] = 'field_data_field_kategori';
@@ -1337,7 +1337,7 @@ function minimediabase_views_default_views() {
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'article' => 'article',
-  );
+    );
   $handler->display->display_options['filters']['type']['group'] = 1;
   /* Filter criterion: Content: Placering (field_placering) */
   $handler->display->display_options['filters']['field_placering_tid']['id'] = 'field_placering_tid';
@@ -1345,7 +1345,7 @@ function minimediabase_views_default_views() {
   $handler->display->display_options['filters']['field_placering_tid']['field'] = 'field_placering_tid';
   $handler->display->display_options['filters']['field_placering_tid']['value'] = array(
     6 => '6',
-  );
+    );
   $handler->display->display_options['filters']['field_placering_tid']['group'] = 1;
   $handler->display->display_options['filters']['field_placering_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_placering_tid']['vocabulary'] = 'placering';
@@ -1393,7 +1393,7 @@ function minimediabase_views_default_views() {
   $handler->display->display_options['fields']['field_image']['settings'] = array(
     'image_style' => 'start_etta',
     'image_link' => 'content',
-  );
+    );
   /* Field: Content: Puffrubrik */
   $handler->display->display_options['fields']['field_puffrubrik']['id'] = 'field_puffrubrik';
   $handler->display->display_options['fields']['field_puffrubrik']['table'] = 'field_data_field_puffrubrik';
@@ -1444,14 +1444,14 @@ function minimediabase_views_default_views() {
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'article' => 'article',
-  );
+    );
   /* Filter criterion: Content: Placering (field_placering) */
   $handler->display->display_options['filters']['field_placering_tid']['id'] = 'field_placering_tid';
   $handler->display->display_options['filters']['field_placering_tid']['table'] = 'field_data_field_placering';
   $handler->display->display_options['filters']['field_placering_tid']['field'] = 'field_placering_tid';
   $handler->display->display_options['filters']['field_placering_tid']['value'] = array(
     7 => '7',
-  );
+    );
   $handler->display->display_options['filters']['field_placering_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_placering_tid']['vocabulary'] = 'placering';
   $handler->display->display_options['block_description'] = 'start_etta';
@@ -1493,7 +1493,7 @@ function minimediabase_views_default_views() {
   $handler->display->display_options['fields']['field_image']['settings'] = array(
     'image_style' => 'fyran',
     'image_link' => 'content',
-  );
+    );
   /* Field: Content: Puffrubrik */
   $handler->display->display_options['fields']['field_puffrubrik']['id'] = 'field_puffrubrik';
   $handler->display->display_options['fields']['field_puffrubrik']['table'] = 'field_data_field_puffrubrik';
@@ -1542,14 +1542,14 @@ function minimediabase_views_default_views() {
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'article' => 'article',
-  );
+    );
   /* Filter criterion: Content: Placering (field_placering) */
   $handler->display->display_options['filters']['field_placering_tid']['id'] = 'field_placering_tid';
   $handler->display->display_options['filters']['field_placering_tid']['table'] = 'field_data_field_placering';
   $handler->display->display_options['filters']['field_placering_tid']['field'] = 'field_placering_tid';
   $handler->display->display_options['filters']['field_placering_tid']['value'] = array(
     8 => '8',
-  );
+    );
   $handler->display->display_options['filters']['field_placering_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_placering_tid']['vocabulary'] = 'placering';
   $handler->display->display_options['block_description'] = 'start_fyran';
@@ -1595,7 +1595,7 @@ function minimediabase_views_default_views() {
   $handler->display->display_options['fields']['field_image']['settings'] = array(
     'image_style' => 'mini',
     'image_link' => 'content',
-  );
+    );
   /* Field: Field: Kategori */
   $handler->display->display_options['fields']['field_kategori']['id'] = 'field_kategori';
   $handler->display->display_options['fields']['field_kategori']['table'] = 'field_data_field_kategori';
@@ -1633,14 +1633,14 @@ function minimediabase_views_default_views() {
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'article' => 'article',
-  );
+    );
   /* Filter criterion: Content: Placering (field_placering) */
   $handler->display->display_options['filters']['field_placering_tid']['id'] = 'field_placering_tid';
   $handler->display->display_options['filters']['field_placering_tid']['table'] = 'field_data_field_placering';
   $handler->display->display_options['filters']['field_placering_tid']['field'] = 'field_placering_tid';
   $handler->display->display_options['filters']['field_placering_tid']['value'] = array(
     10 => '10',
-  );
+    );
   $handler->display->display_options['filters']['field_placering_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_placering_tid']['vocabulary'] = 'placering';
   $handler->display->display_options['block_description'] = 'start_mini1';
@@ -1686,7 +1686,7 @@ function minimediabase_views_default_views() {
   $handler->display->display_options['fields']['field_image']['settings'] = array(
     'image_style' => 'mini',
     'image_link' => 'content',
-  );
+    );
   /* Field: Field: Kategori */
   $handler->display->display_options['fields']['field_kategori']['id'] = 'field_kategori';
   $handler->display->display_options['fields']['field_kategori']['table'] = 'field_data_field_kategori';
@@ -1724,14 +1724,14 @@ function minimediabase_views_default_views() {
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'article' => 'article',
-  );
+    );
   /* Filter criterion: Content: Placering (field_placering) */
   $handler->display->display_options['filters']['field_placering_tid']['id'] = 'field_placering_tid';
   $handler->display->display_options['filters']['field_placering_tid']['table'] = 'field_data_field_placering';
   $handler->display->display_options['filters']['field_placering_tid']['field'] = 'field_placering_tid';
   $handler->display->display_options['filters']['field_placering_tid']['value'] = array(
     11 => '11',
-  );
+    );
   $handler->display->display_options['filters']['field_placering_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_placering_tid']['vocabulary'] = 'placering';
   $handler->display->display_options['block_description'] = 'start_mini2';
@@ -1775,7 +1775,7 @@ function minimediabase_views_default_views() {
   $handler->display->display_options['fields']['field_image']['settings'] = array(
     'image_style' => 'lopsedel',
     'image_link' => 'content',
-  );
+    );
   /* Field: Content: Puffrubrik */
   $handler->display->display_options['fields']['field_puffrubrik']['id'] = 'field_puffrubrik';
   $handler->display->display_options['fields']['field_puffrubrik']['table'] = 'field_data_field_puffrubrik';
@@ -1825,14 +1825,14 @@ function minimediabase_views_default_views() {
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'article' => 'article',
-  );
+    );
   /* Filter criterion: Content: Placering (field_placering) */
   $handler->display->display_options['filters']['field_placering_tid']['id'] = 'field_placering_tid';
   $handler->display->display_options['filters']['field_placering_tid']['table'] = 'field_data_field_placering';
   $handler->display->display_options['filters']['field_placering_tid']['field'] = 'field_placering_tid';
   $handler->display->display_options['filters']['field_placering_tid']['value'] = array(
     9 => '9',
-  );
+    );
   $handler->display->display_options['filters']['field_placering_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_placering_tid']['vocabulary'] = 'placering';
   $handler->display->display_options['block_description'] = 'start_lopsedel';
@@ -1851,7 +1851,7 @@ function minimediabase_views_default_views() {
     t('start_mini1'),
     t('start_mini2'),
     t('start_lopsedel'),
-  );
+    );
   $export['lopsedel_start'] = $view;
 
   $view = new view();
@@ -1871,7 +1871,7 @@ function minimediabase_views_default_views() {
   $handler->display->display_options['access']['type'] = 'role';
   $handler->display->display_options['access']['role'] = array(
     2 => '2',
-  );
+    );
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
@@ -1880,7 +1880,7 @@ function minimediabase_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'table';
   $handler->display->display_options['style_options']['columns'] = array(
     'title' => 'title',
-  );
+    );
   $handler->display->display_options['style_options']['default'] = '-1';
   $handler->display->display_options['style_options']['info'] = array(
     'title' => array(
@@ -1889,8 +1889,8 @@ function minimediabase_views_default_views() {
       'align' => '',
       'separator' => '',
       'empty_column' => 0,
-    ),
-  );
+      ),
+    );
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -1910,7 +1910,7 @@ function minimediabase_views_default_views() {
     'click_to_edit' => 1,
     'empty_text' => '',
     'fallback_format' => 'taxonomy_term_reference_link',
-  );
+    );
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
@@ -1929,7 +1929,7 @@ function minimediabase_views_default_views() {
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'article' => 'article',
-  );
+    );
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
@@ -1954,7 +1954,7 @@ function minimediabase_views_default_views() {
     t('Kategori'),
     t('Område'),
     t('Page'),
-  );
+    );
   $export['omkategorisera'] = $view;
 
   $view = new view();
@@ -1986,34 +1986,34 @@ function minimediabase_views_default_views() {
     'field_image' => 'field_image',
     'field_puffrubrik' => 'field_image',
     'field_pufftext' => 'field_image',
-  );
+    );
   $handler->display->display_options['style_options']['default'] = '-1';
   $handler->display->display_options['style_options']['info'] = array(
     'draggableviews' => array(
       'align' => '',
       'separator' => '',
       'empty_column' => 0,
-    ),
+      ),
     'field_image' => array(
       'align' => '',
       'separator' => '',
       'empty_column' => 0,
-    ),
+      ),
     'field_puffrubrik' => array(
       'sortable' => 0,
       'default_sort_order' => 'asc',
       'align' => '',
       'separator' => '',
       'empty_column' => 0,
-    ),
+      ),
     'field_pufftext' => array(
       'sortable' => 0,
       'default_sort_order' => 'asc',
       'align' => '',
       'separator' => '',
       'empty_column' => 0,
-    ),
-  );
+      ),
+    );
   $handler->display->display_options['style_options']['override'] = FALSE;
   /* Header: Global: Text area */
   $handler->display->display_options['header']['area']['id'] = 'area';
@@ -2034,7 +2034,7 @@ function minimediabase_views_default_views() {
   $handler->display->display_options['fields']['draggableviews']['draggableviews']['ajax'] = 1;
   $handler->display->display_options['fields']['draggableviews']['draggableviews']['draggableviews_handler_fieldapi'] = array(
     'field' => 'field_data_field_weight:field_weight_value',
-  );
+    );
   /* Field: Content: Bild */
   $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
   $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
@@ -2046,7 +2046,7 @@ function minimediabase_views_default_views() {
   $handler->display->display_options['fields']['field_image']['settings'] = array(
     'image_style' => 'media_thumbnail',
     'image_link' => '',
-  );
+    );
   $handler->display->display_options['fields']['field_image']['delta_offset'] = '0';
   /* Field: Content: Puffrubrik */
   $handler->display->display_options['fields']['field_puffrubrik']['id'] = 'field_puffrubrik';
@@ -2080,14 +2080,14 @@ function minimediabase_views_default_views() {
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'article' => 'article',
-  );
+    );
   /* Filter criterion: Content: Placering (field_placering) */
   $handler->display->display_options['filters']['field_placering_tid']['id'] = 'field_placering_tid';
   $handler->display->display_options['filters']['field_placering_tid']['table'] = 'field_data_field_placering';
   $handler->display->display_options['filters']['field_placering_tid']['field'] = 'field_placering_tid';
   $handler->display->display_options['filters']['field_placering_tid']['value'] = array(
     9 => '9',
-  );
+    );
   $handler->display->display_options['filters']['field_placering_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_placering_tid']['vocabulary'] = 'placering';
 
@@ -2115,14 +2115,14 @@ function minimediabase_views_default_views() {
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'article' => 'article',
-  );
+    );
   /* Filter criterion: Content: Placering (field_placering) */
   $handler->display->display_options['filters']['field_placering_tid']['id'] = 'field_placering_tid';
   $handler->display->display_options['filters']['field_placering_tid']['table'] = 'field_data_field_placering';
   $handler->display->display_options['filters']['field_placering_tid']['field'] = 'field_placering_tid';
   $handler->display->display_options['filters']['field_placering_tid']['value'] = array(
     6 => '6',
-  );
+    );
   $handler->display->display_options['filters']['field_placering_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_placering_tid']['vocabulary'] = 'placering';
 
@@ -2145,14 +2145,14 @@ function minimediabase_views_default_views() {
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'article' => 'article',
-  );
+    );
   /* Filter criterion: Content: Placering (field_placering) */
   $handler->display->display_options['filters']['field_placering_tid']['id'] = 'field_placering_tid';
   $handler->display->display_options['filters']['field_placering_tid']['table'] = 'field_data_field_placering';
   $handler->display->display_options['filters']['field_placering_tid']['field'] = 'field_placering_tid';
   $handler->display->display_options['filters']['field_placering_tid']['value'] = array(
     8 => '8',
-  );
+    );
   $handler->display->display_options['filters']['field_placering_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_placering_tid']['vocabulary'] = 'placering';
 
@@ -2175,14 +2175,14 @@ function minimediabase_views_default_views() {
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'article' => 'article',
-  );
+    );
   /* Filter criterion: Content: Placering (field_placering) */
   $handler->display->display_options['filters']['field_placering_tid']['id'] = 'field_placering_tid';
   $handler->display->display_options['filters']['field_placering_tid']['table'] = 'field_data_field_placering';
   $handler->display->display_options['filters']['field_placering_tid']['field'] = 'field_placering_tid';
   $handler->display->display_options['filters']['field_placering_tid']['value'] = array(
     10 => '10',
-  );
+    );
   $handler->display->display_options['filters']['field_placering_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_placering_tid']['vocabulary'] = 'placering';
 
@@ -2205,14 +2205,14 @@ function minimediabase_views_default_views() {
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'article' => 'article',
-  );
+    );
   /* Filter criterion: Content: Placering (field_placering) */
   $handler->display->display_options['filters']['field_placering_tid']['id'] = 'field_placering_tid';
   $handler->display->display_options['filters']['field_placering_tid']['table'] = 'field_data_field_placering';
   $handler->display->display_options['filters']['field_placering_tid']['field'] = 'field_placering_tid';
   $handler->display->display_options['filters']['field_placering_tid']['value'] = array(
     11 => '11',
-  );
+    );
   $handler->display->display_options['filters']['field_placering_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_placering_tid']['vocabulary'] = 'placering';
 
@@ -2235,14 +2235,14 @@ function minimediabase_views_default_views() {
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'article' => 'article',
-  );
+    );
   /* Filter criterion: Content: Placering (field_placering) */
   $handler->display->display_options['filters']['field_placering_tid']['id'] = 'field_placering_tid';
   $handler->display->display_options['filters']['field_placering_tid']['table'] = 'field_data_field_placering';
   $handler->display->display_options['filters']['field_placering_tid']['field'] = 'field_placering_tid';
   $handler->display->display_options['filters']['field_placering_tid']['value'] = array(
     12 => '12',
-  );
+    );
   $handler->display->display_options['filters']['field_placering_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_placering_tid']['vocabulary'] = 'placering';
 
@@ -2265,14 +2265,14 @@ function minimediabase_views_default_views() {
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'article' => 'article',
-  );
+    );
   /* Filter criterion: Content: Placering (field_placering) */
   $handler->display->display_options['filters']['field_placering_tid']['id'] = 'field_placering_tid';
   $handler->display->display_options['filters']['field_placering_tid']['table'] = 'field_data_field_placering';
   $handler->display->display_options['filters']['field_placering_tid']['field'] = 'field_placering_tid';
   $handler->display->display_options['filters']['field_placering_tid']['value'] = array(
     13 => '13',
-  );
+    );
   $handler->display->display_options['filters']['field_placering_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_placering_tid']['vocabulary'] = 'placering';
 
@@ -2295,14 +2295,14 @@ function minimediabase_views_default_views() {
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'article' => 'article',
-  );
+    );
   /* Filter criterion: Content: Placering (field_placering) */
   $handler->display->display_options['filters']['field_placering_tid']['id'] = 'field_placering_tid';
   $handler->display->display_options['filters']['field_placering_tid']['table'] = 'field_data_field_placering';
   $handler->display->display_options['filters']['field_placering_tid']['field'] = 'field_placering_tid';
   $handler->display->display_options['filters']['field_placering_tid']['value'] = array(
     15 => '15',
-  );
+    );
   $handler->display->display_options['filters']['field_placering_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_placering_tid']['vocabulary'] = 'placering';
 
@@ -2325,14 +2325,14 @@ function minimediabase_views_default_views() {
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'article' => 'article',
-  );
+    );
   /* Filter criterion: Content: Placering (field_placering) */
   $handler->display->display_options['filters']['field_placering_tid']['id'] = 'field_placering_tid';
   $handler->display->display_options['filters']['field_placering_tid']['table'] = 'field_data_field_placering';
   $handler->display->display_options['filters']['field_placering_tid']['field'] = 'field_placering_tid';
   $handler->display->display_options['filters']['field_placering_tid']['value'] = array(
     14 => '14',
-  );
+    );
   $handler->display->display_options['filters']['field_placering_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_placering_tid']['vocabulary'] = 'placering';
 
@@ -2355,14 +2355,14 @@ function minimediabase_views_default_views() {
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'article' => 'article',
-  );
+    );
   /* Filter criterion: Content: Placering (field_placering) */
   $handler->display->display_options['filters']['field_placering_tid']['id'] = 'field_placering_tid';
   $handler->display->display_options['filters']['field_placering_tid']['table'] = 'field_data_field_placering';
   $handler->display->display_options['filters']['field_placering_tid']['field'] = 'field_placering_tid';
   $handler->display->display_options['filters']['field_placering_tid']['value'] = array(
     16 => '16',
-  );
+    );
   $handler->display->display_options['filters']['field_placering_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_placering_tid']['vocabulary'] = 'placering';
   $translatables['orderarticles'] = array(
@@ -2396,7 +2396,7 @@ function minimediabase_views_default_views() {
     t('Ordna undersidemini 2'),
     t('Undersida Löpsedel'),
     t('Ordna undersidelöp'),
-  );
+    );
   $export['orderarticles'] = $view;
 
   $view = new view();
@@ -2480,8 +2480,8 @@ function minimediabase_views_default_views() {
   $handler->display->display_options['empty']['area']['field'] = 'area';
   $handler->display->display_options['empty']['area']['empty'] = TRUE;
   $handler->display->display_options['empty']['area']['content'] = '<h2>Ordna artiklar på startsidan</h2>
-<p>Här kan du ändra hur artiklarna visas på startsidan</p>
-<p>&nbsp;</p>';
+  <p>Här kan du ändra hur artiklarna visas på startsidan</p>
+  <p>&nbsp;</p>';
   $handler->display->display_options['empty']['area']['format'] = 'filtered_html';
   $handler->display->display_options['path'] = 'admin/manage/order/articles/start';
 
@@ -2501,11 +2501,11 @@ function minimediabase_views_default_views() {
   $handler->display->display_options['empty']['area']['field'] = 'area';
   $handler->display->display_options['empty']['area']['empty'] = TRUE;
   $handler->display->display_options['empty']['area']['content'] = '<h2>Ordna artiklar på undersidor</h2>
-<p>Här kan du ändra hur artiklarna visas på undersidor</p>
-<p>&nbsp;</p>
+  <p>Här kan du ändra hur artiklarna visas på undersidor</p>
+  <p>&nbsp;</p>
 
 
-';
+  ';
   $handler->display->display_options['empty']['area']['format'] = 'filtered_html';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Title */
@@ -2537,16 +2537,16 @@ function minimediabase_views_default_views() {
     t('OrderArticlesStartpageLoader'),
     t('<p>Här kan du ändra hur artiklarna visas på startsidan</p>'),
     t('<h2>Ordna artiklar på startsidan</h2>
-<p>Här kan du ändra hur artiklarna visas på startsidan</p>
-<p>&nbsp;</p>'),
+      <p>Här kan du ändra hur artiklarna visas på startsidan</p>
+      <p>&nbsp;</p>'),
     t('OrderArticlesSubpageLoader'),
     t('<h2>Ordna artiklar på undersidor</h2>
-<p>Här kan du ändra hur artiklarna visas på undersidor</p>
-<p>&nbsp;</p>
+      <p>Här kan du ändra hur artiklarna visas på undersidor</p>
+      <p>&nbsp;</p>
 
 
-'),
-  );
+      '),
+    );
   $export['orderarticlesloader'] = $view;
 
   $view = new view();
@@ -2604,7 +2604,7 @@ function minimediabase_views_default_views() {
     t('Desc'),
     t('Rendered'),
     t('Block'),
-  );
+    );
   $export['recent_images'] = $view;
 
   $view = new view();
@@ -2663,7 +2663,7 @@ function minimediabase_views_default_views() {
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'article' => 'article',
-  );
+    );
 
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');
@@ -2684,8 +2684,314 @@ function minimediabase_views_default_views() {
     t('next ›'),
     t('last »'),
     t('Block'),
-  );
+    );
   $export['senaste_artiklarna'] = $view;
+
+  $view = new view();
+  $view->name = 'lopsedel_mobile';
+  $view->description = '';
+  $view->tag = 'default';
+  $view->base_table = 'node';
+  $view->human_name = 'lopsedel_mobile';
+  $view->core = 7;
+  $view->api_version = '3.0';
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+  /* Display: Master */
+  $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'perm';
+  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '4';
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['style_options']['default_row_class'] = FALSE;
+  $handler->display->display_options['style_options']['row_class_special'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'ds';
+  $handler->display->display_options['row_options']['view_mode'] = 'ettan';
+  $handler->display->display_options['row_options']['load_comments'] = 0;
+  $handler->display->display_options['row_options']['alternating'] = 0;
+  $handler->display->display_options['row_options']['grouping'] = 0;
+  $handler->display->display_options['row_options']['advanced'] = 0;
+  $handler->display->display_options['row_options']['grouping_fieldset']['group_field'] = 'node|created';
+  $handler->display->display_options['row_options']['default_fieldset']['view_mode'] = 'ettan';
+  /* Field: Content: Image */
+  $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
+  $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
+  $handler->display->display_options['fields']['field_image']['field'] = 'field_image';
+  $handler->display->display_options['fields']['field_image']['label'] = '';
+  $handler->display->display_options['fields']['field_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_image']['settings'] = array(
+    'image_style' => '',
+    'image_link' => '',
+    );
+  /* Field: Content: Puffrubrik */
+  $handler->display->display_options['fields']['field_puffrubrik']['id'] = 'field_puffrubrik';
+  $handler->display->display_options['fields']['field_puffrubrik']['table'] = 'field_data_field_puffrubrik';
+  $handler->display->display_options['fields']['field_puffrubrik']['field'] = 'field_puffrubrik';
+  $handler->display->display_options['fields']['field_puffrubrik']['label'] = '';
+  $handler->display->display_options['fields']['field_puffrubrik']['element_label_colon'] = FALSE;
+  /* Field: Field: Kategori */
+  $handler->display->display_options['fields']['field_kategori']['id'] = 'field_kategori';
+  $handler->display->display_options['fields']['field_kategori']['table'] = 'field_data_field_kategori';
+  $handler->display->display_options['fields']['field_kategori']['field'] = 'field_kategori';
+  $handler->display->display_options['fields']['field_kategori']['label'] = '';
+  $handler->display->display_options['fields']['field_kategori']['element_label_colon'] = FALSE;
+  /* Field: Content: Pufftext */
+  $handler->display->display_options['fields']['field_pufftext']['id'] = 'field_pufftext';
+  $handler->display->display_options['fields']['field_pufftext']['table'] = 'field_data_field_pufftext';
+  $handler->display->display_options['fields']['field_pufftext']['field'] = 'field_pufftext';
+  $handler->display->display_options['fields']['field_pufftext']['label'] = '';
+  $handler->display->display_options['fields']['field_pufftext']['element_label_colon'] = FALSE;
+  /* Sort criterion: Content: listordning (field_listordning) */
+  $handler->display->display_options['sorts']['field_listordning_value']['id'] = 'field_listordning_value';
+  $handler->display->display_options['sorts']['field_listordning_value']['table'] = 'field_data_field_listordning';
+  $handler->display->display_options['sorts']['field_listordning_value']['field'] = 'field_listordning_value';
+  /* Sort criterion: Content: Post date */
+  $handler->display->display_options['sorts']['created']['id'] = 'created';
+  $handler->display->display_options['sorts']['created']['table'] = 'node';
+  $handler->display->display_options['sorts']['created']['field'] = 'created';
+  $handler->display->display_options['sorts']['created']['order'] = 'DESC';
+  $handler->display->display_options['sorts']['created']['granularity'] = 'hour';
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'article' => 'article',
+    );
+  /* Filter criterion: Content: Placering (field_placering) */
+  $handler->display->display_options['filters']['field_placering_tid']['id'] = 'field_placering_tid';
+  $handler->display->display_options['filters']['field_placering_tid']['table'] = 'field_data_field_placering';
+  $handler->display->display_options['filters']['field_placering_tid']['field'] = 'field_placering_tid';
+  $handler->display->display_options['filters']['field_placering_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['field_placering_tid']['vocabulary'] = 'placering';
+
+  /* Display: åttanmobile */
+  $handler = $view->new_display('block', 'åttanmobile', 'block_2');
+  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '8';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'list';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'ds';
+  $handler->display->display_options['row_options']['view_mode'] = 'lopsedel';
+  $handler->display->display_options['row_options']['load_comments'] = 0;
+  $handler->display->display_options['row_options']['alternating'] = 0;
+  $handler->display->display_options['row_options']['grouping'] = 0;
+  $handler->display->display_options['row_options']['advanced'] = 0;
+  $handler->display->display_options['row_options']['grouping_fieldset']['group_field'] = 'node|created';
+  $handler->display->display_options['row_options']['default_fieldset']['view_mode'] = 'lopsedel';
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Path */
+  $handler->display->display_options['fields']['path']['id'] = 'path';
+  $handler->display->display_options['fields']['path']['table'] = 'node';
+  $handler->display->display_options['fields']['path']['field'] = 'path';
+  $handler->display->display_options['fields']['path']['label'] = '';
+  $handler->display->display_options['fields']['path']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['path']['element_label_colon'] = FALSE;
+  /* Field: Content: Image */
+  $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
+  $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
+  $handler->display->display_options['fields']['field_image']['field'] = 'field_image';
+  $handler->display->display_options['fields']['field_image']['label'] = '';
+  $handler->display->display_options['fields']['field_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_image']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_image']['settings'] = array(
+    'image_style' => 'fyran',
+    'image_link' => 'content',
+    );
+  /* Field: Content: Puffrubrik */
+  $handler->display->display_options['fields']['field_puffrubrik']['id'] = 'field_puffrubrik';
+  $handler->display->display_options['fields']['field_puffrubrik']['table'] = 'field_data_field_puffrubrik';
+  $handler->display->display_options['fields']['field_puffrubrik']['field'] = 'field_puffrubrik';
+  $handler->display->display_options['fields']['field_puffrubrik']['label'] = '';
+  $handler->display->display_options['fields']['field_puffrubrik']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['field_puffrubrik']['alter']['path'] = '[path]';
+  $handler->display->display_options['fields']['field_puffrubrik']['alter']['absolute'] = TRUE;
+  $handler->display->display_options['fields']['field_puffrubrik']['element_type'] = 'h2';
+  $handler->display->display_options['fields']['field_puffrubrik']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_puffrubrik']['element_default_classes'] = FALSE;
+  /* Field: Field: Kategori */
+  $handler->display->display_options['fields']['field_kategori']['id'] = 'field_kategori';
+  $handler->display->display_options['fields']['field_kategori']['table'] = 'field_data_field_kategori';
+  $handler->display->display_options['fields']['field_kategori']['field'] = 'field_kategori';
+  $handler->display->display_options['fields']['field_kategori']['label'] = '';
+  $handler->display->display_options['fields']['field_kategori']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_kategori']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_kategori']['type'] = 'taxonomy_term_reference_plain';
+  /* Field: Content: Pufftext */
+  $handler->display->display_options['fields']['field_pufftext']['id'] = 'field_pufftext';
+  $handler->display->display_options['fields']['field_pufftext']['table'] = 'field_data_field_pufftext';
+  $handler->display->display_options['fields']['field_pufftext']['field'] = 'field_pufftext';
+  $handler->display->display_options['fields']['field_pufftext']['label'] = '';
+  $handler->display->display_options['fields']['field_pufftext']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_pufftext']['alter']['text'] = '<span>[field_kategori]</span> [field_pufftext]';
+  $handler->display->display_options['fields']['field_pufftext']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['field_pufftext']['alter']['path'] = '[path]';
+  $handler->display->display_options['fields']['field_pufftext']['alter']['absolute'] = TRUE;
+  $handler->display->display_options['fields']['field_pufftext']['element_type'] = 'p';
+  $handler->display->display_options['fields']['field_pufftext']['element_class'] = 'fyran_pufftext';
+  $handler->display->display_options['fields']['field_pufftext']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_pufftext']['element_default_classes'] = FALSE;
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'article' => 'article',
+    );
+  /* Filter criterion: Content: Placering (field_placering) */
+  $handler->display->display_options['filters']['field_placering_tid']['id'] = 'field_placering_tid';
+  $handler->display->display_options['filters']['field_placering_tid']['table'] = 'field_data_field_placering';
+  $handler->display->display_options['filters']['field_placering_tid']['field'] = 'field_placering_tid';
+  $handler->display->display_options['filters']['field_placering_tid']['value'] = array(
+    6 => '6',
+    7 => '7',
+    8 => '8',
+    9 => '9',
+    10 => '10',
+    11 => '11',
+    12 => '12',
+    13 => '13',
+    15 => '15',
+    14 => '14',
+    16 => '16',
+    );
+  $handler->display->display_options['filters']['field_placering_tid']['reduce_duplicates'] = TRUE;
+  $handler->display->display_options['filters']['field_placering_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['field_placering_tid']['vocabulary'] = 'placering';
+  $handler->display->display_options['block_description'] = 'åttanmobile';
+
+  /* Display: minimobile */
+  $handler = $view->new_display('block', 'minimobile', 'block_3');
+  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '40';
+  $handler->display->display_options['pager']['options']['offset'] = '5';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'list';
+  $handler->display->display_options['style_options']['row_class'] = 'mini-row';
+  $handler->display->display_options['style_options']['wrapper_class'] = '';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'ds';
+  $handler->display->display_options['row_options']['view_mode'] = 'minimobile';
+  $handler->display->display_options['row_options']['load_comments'] = 0;
+  $handler->display->display_options['row_options']['alternating'] = 0;
+  $handler->display->display_options['row_options']['grouping'] = 0;
+  $handler->display->display_options['row_options']['advanced'] = 0;
+  $handler->display->display_options['row_options']['grouping_fieldset']['group_field'] = 'node|created';
+  $handler->display->display_options['row_options']['default_fieldset']['view_mode'] = 'minimobile';
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['header'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Path */
+  $handler->display->display_options['fields']['path']['id'] = 'path';
+  $handler->display->display_options['fields']['path']['table'] = 'node';
+  $handler->display->display_options['fields']['path']['field'] = 'path';
+  $handler->display->display_options['fields']['path']['label'] = '';
+  $handler->display->display_options['fields']['path']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['path']['element_label_colon'] = FALSE;
+  /* Field: Content: Image */
+  $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
+  $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
+  $handler->display->display_options['fields']['field_image']['field'] = 'field_image';
+  $handler->display->display_options['fields']['field_image']['label'] = '';
+  $handler->display->display_options['fields']['field_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_image']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_image']['settings'] = array(
+    'image_style' => 'mini',
+    'image_link' => 'content',
+    );
+  /* Field: Field: Kategori */
+  $handler->display->display_options['fields']['field_kategori']['id'] = 'field_kategori';
+  $handler->display->display_options['fields']['field_kategori']['table'] = 'field_data_field_kategori';
+  $handler->display->display_options['fields']['field_kategori']['field'] = 'field_kategori';
+  $handler->display->display_options['fields']['field_kategori']['label'] = '';
+  $handler->display->display_options['fields']['field_kategori']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_kategori']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_kategori']['type'] = 'taxonomy_term_reference_plain';
+  /* Field: Content: Pufftext */
+  $handler->display->display_options['fields']['field_pufftext']['id'] = 'field_pufftext';
+  $handler->display->display_options['fields']['field_pufftext']['table'] = 'field_data_field_pufftext';
+  $handler->display->display_options['fields']['field_pufftext']['field'] = 'field_pufftext';
+  $handler->display->display_options['fields']['field_pufftext']['label'] = '';
+  $handler->display->display_options['fields']['field_pufftext']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_pufftext']['alter']['text'] = '<span>[field_kategori]</span> [field_pufftext]';
+  $handler->display->display_options['fields']['field_pufftext']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['field_pufftext']['alter']['path'] = '[path]';
+  $handler->display->display_options['fields']['field_pufftext']['alter']['absolute'] = TRUE;
+  $handler->display->display_options['fields']['field_pufftext']['element_type'] = 'p';
+  $handler->display->display_options['fields']['field_pufftext']['element_class'] = 'mini_pufftext';
+  $handler->display->display_options['fields']['field_pufftext']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_pufftext']['element_default_classes'] = FALSE;
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'article' => 'article',
+    );
+  /* Filter criterion: Content: Placering (field_placering) */
+  $handler->display->display_options['filters']['field_placering_tid']['id'] = 'field_placering_tid';
+  $handler->display->display_options['filters']['field_placering_tid']['table'] = 'field_data_field_placering';
+  $handler->display->display_options['filters']['field_placering_tid']['field'] = 'field_placering_tid';
+  $handler->display->display_options['filters']['field_placering_tid']['value'] = array(
+    6 => '6',
+    7 => '7',
+    8 => '8',
+    9 => '9',
+    10 => '10',
+    11 => '11',
+    12 => '12',
+    13 => '13',
+    15 => '15',
+    14 => '14',
+    16 => '16',
+    );
+  $handler->display->display_options['filters']['field_placering_tid']['reduce_duplicates'] = TRUE;
+  $handler->display->display_options['filters']['field_placering_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['field_placering_tid']['vocabulary'] = 'placering';
+  $handler->display->display_options['block_description'] = 'minimobile';
+
+  $export['lopsedel_mobile'] = $view;
 
   return $export;
 }
