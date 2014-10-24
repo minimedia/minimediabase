@@ -1132,6 +1132,323 @@ function minimediabase_views_default_views() {
   $export['lopsedel'] = $view;
 
   $view = new view();
+  $view->name = 'lopsedel_mobile';
+  $view->description = '';
+  $view->tag = 'default';
+  $view->base_table = 'node';
+  $view->human_name = 'lopsedel_mobile';
+  $view->core = 7;
+  $view->api_version = '3.0';
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+  /* Display: Master */
+  $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'perm';
+  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '4';
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['style_options']['default_row_class'] = FALSE;
+  $handler->display->display_options['style_options']['row_class_special'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'ds';
+  $handler->display->display_options['row_options']['view_mode'] = 'ettan';
+  $handler->display->display_options['row_options']['load_comments'] = 0;
+  $handler->display->display_options['row_options']['alternating'] = 0;
+  $handler->display->display_options['row_options']['grouping'] = 0;
+  $handler->display->display_options['row_options']['advanced'] = 0;
+  $handler->display->display_options['row_options']['grouping_fieldset']['group_field'] = 'node|created';
+  $handler->display->display_options['row_options']['default_fieldset']['view_mode'] = 'ettan';
+  /* Field: Content: Bild */
+  $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
+  $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
+  $handler->display->display_options['fields']['field_image']['field'] = 'field_image';
+  $handler->display->display_options['fields']['field_image']['label'] = '';
+  $handler->display->display_options['fields']['field_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_image']['settings'] = array(
+    'image_style' => '',
+    'image_link' => '',
+  );
+  /* Field: Content: Puffrubrik */
+  $handler->display->display_options['fields']['field_puffrubrik']['id'] = 'field_puffrubrik';
+  $handler->display->display_options['fields']['field_puffrubrik']['table'] = 'field_data_field_puffrubrik';
+  $handler->display->display_options['fields']['field_puffrubrik']['field'] = 'field_puffrubrik';
+  $handler->display->display_options['fields']['field_puffrubrik']['label'] = '';
+  $handler->display->display_options['fields']['field_puffrubrik']['element_label_colon'] = FALSE;
+  /* Field: Field: Kategori */
+  $handler->display->display_options['fields']['field_kategori']['id'] = 'field_kategori';
+  $handler->display->display_options['fields']['field_kategori']['table'] = 'field_data_field_kategori';
+  $handler->display->display_options['fields']['field_kategori']['field'] = 'field_kategori';
+  $handler->display->display_options['fields']['field_kategori']['label'] = '';
+  $handler->display->display_options['fields']['field_kategori']['element_label_colon'] = FALSE;
+  /* Field: Content: Pufftext */
+  $handler->display->display_options['fields']['field_pufftext']['id'] = 'field_pufftext';
+  $handler->display->display_options['fields']['field_pufftext']['table'] = 'field_data_field_pufftext';
+  $handler->display->display_options['fields']['field_pufftext']['field'] = 'field_pufftext';
+  $handler->display->display_options['fields']['field_pufftext']['label'] = '';
+  $handler->display->display_options['fields']['field_pufftext']['element_label_colon'] = FALSE;
+  /* Sort criterion: Content: Vikt (field_weight) */
+  $handler->display->display_options['sorts']['field_weight_value']['id'] = 'field_weight_value';
+  $handler->display->display_options['sorts']['field_weight_value']['table'] = 'field_data_field_weight';
+  $handler->display->display_options['sorts']['field_weight_value']['field'] = 'field_weight_value';
+  /* Sort criterion: Content: Post date */
+  $handler->display->display_options['sorts']['created']['id'] = 'created';
+  $handler->display->display_options['sorts']['created']['table'] = 'node';
+  $handler->display->display_options['sorts']['created']['field'] = 'created';
+  $handler->display->display_options['sorts']['created']['order'] = 'DESC';
+  $handler->display->display_options['sorts']['created']['granularity'] = 'hour';
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'article' => 'article',
+  );
+  /* Filter criterion: Content: Placering (field_placering) */
+  $handler->display->display_options['filters']['field_placering_tid']['id'] = 'field_placering_tid';
+  $handler->display->display_options['filters']['field_placering_tid']['table'] = 'field_data_field_placering';
+  $handler->display->display_options['filters']['field_placering_tid']['field'] = 'field_placering_tid';
+  $handler->display->display_options['filters']['field_placering_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['field_placering_tid']['vocabulary'] = 'placering';
+
+  /* Display: åttanmobile */
+  $handler = $view->new_display('block', 'åttanmobile', 'block_2');
+  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '8';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'list';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'ds';
+  $handler->display->display_options['row_options']['view_mode'] = 'lopsedel';
+  $handler->display->display_options['row_options']['load_comments'] = 0;
+  $handler->display->display_options['row_options']['alternating'] = 0;
+  $handler->display->display_options['row_options']['grouping'] = 0;
+  $handler->display->display_options['row_options']['advanced'] = 0;
+  $handler->display->display_options['row_options']['grouping_fieldset']['group_field'] = 'node|created';
+  $handler->display->display_options['row_options']['default_fieldset']['view_mode'] = 'lopsedel';
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Path */
+  $handler->display->display_options['fields']['path']['id'] = 'path';
+  $handler->display->display_options['fields']['path']['table'] = 'node';
+  $handler->display->display_options['fields']['path']['field'] = 'path';
+  $handler->display->display_options['fields']['path']['label'] = '';
+  $handler->display->display_options['fields']['path']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['path']['element_label_colon'] = FALSE;
+  /* Field: Content: Bild */
+  $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
+  $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
+  $handler->display->display_options['fields']['field_image']['field'] = 'field_image';
+  $handler->display->display_options['fields']['field_image']['label'] = '';
+  $handler->display->display_options['fields']['field_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_image']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_image']['settings'] = array(
+    'image_style' => 'fyran',
+    'image_link' => 'content',
+  );
+  /* Field: Content: Puffrubrik */
+  $handler->display->display_options['fields']['field_puffrubrik']['id'] = 'field_puffrubrik';
+  $handler->display->display_options['fields']['field_puffrubrik']['table'] = 'field_data_field_puffrubrik';
+  $handler->display->display_options['fields']['field_puffrubrik']['field'] = 'field_puffrubrik';
+  $handler->display->display_options['fields']['field_puffrubrik']['label'] = '';
+  $handler->display->display_options['fields']['field_puffrubrik']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['field_puffrubrik']['alter']['path'] = '[path]';
+  $handler->display->display_options['fields']['field_puffrubrik']['alter']['absolute'] = TRUE;
+  $handler->display->display_options['fields']['field_puffrubrik']['element_type'] = 'h2';
+  $handler->display->display_options['fields']['field_puffrubrik']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_puffrubrik']['element_default_classes'] = FALSE;
+  /* Field: Field: Kategori */
+  $handler->display->display_options['fields']['field_kategori']['id'] = 'field_kategori';
+  $handler->display->display_options['fields']['field_kategori']['table'] = 'field_data_field_kategori';
+  $handler->display->display_options['fields']['field_kategori']['field'] = 'field_kategori';
+  $handler->display->display_options['fields']['field_kategori']['label'] = '';
+  $handler->display->display_options['fields']['field_kategori']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_kategori']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_kategori']['type'] = 'taxonomy_term_reference_plain';
+  /* Field: Content: Pufftext */
+  $handler->display->display_options['fields']['field_pufftext']['id'] = 'field_pufftext';
+  $handler->display->display_options['fields']['field_pufftext']['table'] = 'field_data_field_pufftext';
+  $handler->display->display_options['fields']['field_pufftext']['field'] = 'field_pufftext';
+  $handler->display->display_options['fields']['field_pufftext']['label'] = '';
+  $handler->display->display_options['fields']['field_pufftext']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_pufftext']['alter']['text'] = '<span>[field_kategori]</span> [field_pufftext]';
+  $handler->display->display_options['fields']['field_pufftext']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['field_pufftext']['alter']['path'] = '[path]';
+  $handler->display->display_options['fields']['field_pufftext']['alter']['absolute'] = TRUE;
+  $handler->display->display_options['fields']['field_pufftext']['element_type'] = 'p';
+  $handler->display->display_options['fields']['field_pufftext']['element_class'] = 'fyran_pufftext';
+  $handler->display->display_options['fields']['field_pufftext']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_pufftext']['element_default_classes'] = FALSE;
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'article' => 'article',
+  );
+  /* Filter criterion: Content: Placering (field_placering) */
+  $handler->display->display_options['filters']['field_placering_tid']['id'] = 'field_placering_tid';
+  $handler->display->display_options['filters']['field_placering_tid']['table'] = 'field_data_field_placering';
+  $handler->display->display_options['filters']['field_placering_tid']['field'] = 'field_placering_tid';
+  $handler->display->display_options['filters']['field_placering_tid']['value'] = array(
+    6 => '6',
+    7 => '7',
+    8 => '8',
+    9 => '9',
+    10 => '10',
+    11 => '11',
+    12 => '12',
+    13 => '13',
+    15 => '15',
+    14 => '14',
+    16 => '16',
+  );
+  $handler->display->display_options['filters']['field_placering_tid']['reduce_duplicates'] = TRUE;
+  $handler->display->display_options['filters']['field_placering_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['field_placering_tid']['vocabulary'] = 'placering';
+  $handler->display->display_options['block_description'] = 'åttanmobile';
+
+  /* Display: minimobile */
+  $handler = $view->new_display('block', 'minimobile', 'block_3');
+  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '40';
+  $handler->display->display_options['pager']['options']['offset'] = '5';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'list';
+  $handler->display->display_options['style_options']['row_class'] = 'mini-row';
+  $handler->display->display_options['style_options']['wrapper_class'] = '';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'ds';
+  $handler->display->display_options['row_options']['view_mode'] = 'minimobile';
+  $handler->display->display_options['row_options']['load_comments'] = 0;
+  $handler->display->display_options['row_options']['alternating'] = 0;
+  $handler->display->display_options['row_options']['grouping'] = 0;
+  $handler->display->display_options['row_options']['advanced'] = 0;
+  $handler->display->display_options['row_options']['grouping_fieldset']['group_field'] = 'node|created';
+  $handler->display->display_options['row_options']['default_fieldset']['view_mode'] = 'minimobile';
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['header'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Path */
+  $handler->display->display_options['fields']['path']['id'] = 'path';
+  $handler->display->display_options['fields']['path']['table'] = 'node';
+  $handler->display->display_options['fields']['path']['field'] = 'path';
+  $handler->display->display_options['fields']['path']['label'] = '';
+  $handler->display->display_options['fields']['path']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['path']['element_label_colon'] = FALSE;
+  /* Field: Content: Bild */
+  $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
+  $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
+  $handler->display->display_options['fields']['field_image']['field'] = 'field_image';
+  $handler->display->display_options['fields']['field_image']['label'] = '';
+  $handler->display->display_options['fields']['field_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_image']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_image']['settings'] = array(
+    'image_style' => 'mini',
+    'image_link' => 'content',
+  );
+  /* Field: Field: Kategori */
+  $handler->display->display_options['fields']['field_kategori']['id'] = 'field_kategori';
+  $handler->display->display_options['fields']['field_kategori']['table'] = 'field_data_field_kategori';
+  $handler->display->display_options['fields']['field_kategori']['field'] = 'field_kategori';
+  $handler->display->display_options['fields']['field_kategori']['label'] = '';
+  $handler->display->display_options['fields']['field_kategori']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_kategori']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_kategori']['type'] = 'taxonomy_term_reference_plain';
+  /* Field: Content: Pufftext */
+  $handler->display->display_options['fields']['field_pufftext']['id'] = 'field_pufftext';
+  $handler->display->display_options['fields']['field_pufftext']['table'] = 'field_data_field_pufftext';
+  $handler->display->display_options['fields']['field_pufftext']['field'] = 'field_pufftext';
+  $handler->display->display_options['fields']['field_pufftext']['label'] = '';
+  $handler->display->display_options['fields']['field_pufftext']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_pufftext']['alter']['text'] = '<span>[field_kategori]</span> [field_pufftext]';
+  $handler->display->display_options['fields']['field_pufftext']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['field_pufftext']['alter']['path'] = '[path]';
+  $handler->display->display_options['fields']['field_pufftext']['alter']['absolute'] = TRUE;
+  $handler->display->display_options['fields']['field_pufftext']['element_type'] = 'p';
+  $handler->display->display_options['fields']['field_pufftext']['element_class'] = 'mini_pufftext';
+  $handler->display->display_options['fields']['field_pufftext']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_pufftext']['element_default_classes'] = FALSE;
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'article' => 'article',
+  );
+  /* Filter criterion: Content: Placering (field_placering) */
+  $handler->display->display_options['filters']['field_placering_tid']['id'] = 'field_placering_tid';
+  $handler->display->display_options['filters']['field_placering_tid']['table'] = 'field_data_field_placering';
+  $handler->display->display_options['filters']['field_placering_tid']['field'] = 'field_placering_tid';
+  $handler->display->display_options['filters']['field_placering_tid']['value'] = array(
+    6 => '6',
+    7 => '7',
+    8 => '8',
+    9 => '9',
+    10 => '10',
+    11 => '11',
+    12 => '12',
+    13 => '13',
+    15 => '15',
+    14 => '14',
+    16 => '16',
+  );
+  $handler->display->display_options['filters']['field_placering_tid']['reduce_duplicates'] = TRUE;
+  $handler->display->display_options['filters']['field_placering_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['field_placering_tid']['vocabulary'] = 'placering';
+  $handler->display->display_options['block_description'] = 'minimobile';
+  $translatables['lopsedel_mobile'] = array(
+    t('Master'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('åttanmobile'),
+    t('<span>[field_kategori]</span> [field_pufftext]'),
+    t('minimobile'),
+  );
+  $export['lopsedel_mobile'] = $view;
+
+  $view = new view();
   $view->name = 'lopsedel_start';
   $view->description = '';
   $view->tag = 'default';
