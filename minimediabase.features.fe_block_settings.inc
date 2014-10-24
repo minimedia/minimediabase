@@ -687,6 +687,70 @@ user',
     'visibility' => '0',
   );
 
+  $export['views-lopsedel_mobile-block_2'] = array(
+    'cache' => -1,
+    'custom' => '0',
+    'delta' => 'lopsedel_mobile-block_2',
+    'module' => 'views',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'arctica_subtheme' => array(
+        'region' => 'content',
+        'status' => '1',
+        'theme' => 'arctica_subtheme',
+        'weight' => '-21',
+      ),
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => '0',
+      ),
+      'seven' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'seven',
+        'weight' => '0',
+      ),
+    ),
+    'title' => '',
+    'visibility' => '0',
+  );
+
+  $export['views-lopsedel_mobile-block_3'] = array(
+    'cache' => -1,
+    'custom' => '0',
+    'delta' => 'lopsedel_mobile-block_3',
+    'module' => 'views',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'arctica_subtheme' => array(
+        'region' => 'sidebar_second',
+        'status' => '1',
+        'theme' => 'arctica_subtheme',
+        'weight' => '-19',
+      ),
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => '0',
+      ),
+      'seven' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'seven',
+        'weight' => '0',
+      ),
+    ),
+    'title' => '',
+    'visibility' => '0',
+  );
+
   $export['views-lopsedel_start-block'] = array(
     'cache' => -1,
     'custom' => '0',
