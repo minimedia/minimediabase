@@ -64,24 +64,6 @@ function minimediabase_menu_default_menu_links() {
     'expanded' => '0',
     'weight' => '-43',
   );
-  // Exported menu link: menu-editor-menu:admin/manage/categories
-  $menu_links['menu-editor-menu:admin/manage/categories'] = array(
-    'menu_name' => 'menu-editor-menu',
-    'link_path' => 'admin/manage/categories',
-    'router_path' => 'admin/manage/categories',
-    'link_title' => 'Ändra kategorier',
-    'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-    ),
-    'module' => 'menu',
-    'hidden' => '0',
-    'external' => '0',
-    'has_children' => '0',
-    'expanded' => '0',
-    'weight' => '-44',
-  );
   // Exported menu link: menu-editor-menu:admin/manage/content/articles
   $menu_links['menu-editor-menu:admin/manage/content/articles'] = array(
     'menu_name' => 'menu-editor-menu',
@@ -220,7 +202,6 @@ function minimediabase_menu_default_menu_links() {
   t('Start');
   t('Ändra SEO');
   t('Ändra huvudnavigering');
-  t('Ändra kategorier');
   t('Ändra sajtnamn');
 
 
