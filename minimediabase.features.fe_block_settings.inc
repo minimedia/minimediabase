@@ -57,7 +57,7 @@ function minimediabase_default_fe_block_settings() {
         'region' => 'footer',
         'status' => '1',
         'theme' => 'arctica_subtheme',
-        'weight' => '0',
+        'weight' => '-36',
       ),
       'bartik' => array(
         'region' => '',
@@ -89,7 +89,7 @@ function minimediabase_default_fe_block_settings() {
         'region' => 'header',
         'status' => '1',
         'theme' => 'arctica_subtheme',
-        'weight' => '-27',
+        'weight' => '-36',
       ),
       'bartik' => array(
         'region' => '',
@@ -142,8 +142,72 @@ function minimediabase_default_fe_block_settings() {
     'visibility' => '0',
   );
 
+  $export['platformoptions-annonsbalk_botten'] = array(
+    'cache' => 8,
+    'custom' => '0',
+    'delta' => 'annonsbalk_botten',
+    'module' => 'platformoptions',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'arctica_subtheme' => array(
+        'region' => 'footer',
+        'status' => '1',
+        'theme' => 'arctica_subtheme',
+        'weight' => '-37',
+      ),
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => '0',
+      ),
+      'seven' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'seven',
+        'weight' => '0',
+      ),
+    ),
+    'title' => '',
+    'visibility' => '0',
+  );
+
+  $export['platformoptions-annonsbalk_topp'] = array(
+    'cache' => 8,
+    'custom' => '0',
+    'delta' => 'annonsbalk_topp',
+    'module' => 'platformoptions',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'arctica_subtheme' => array(
+        'region' => 'header',
+        'status' => '1',
+        'theme' => 'arctica_subtheme',
+        'weight' => '-37',
+      ),
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => '0',
+      ),
+      'seven' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'seven',
+        'weight' => '0',
+      ),
+    ),
+    'title' => '',
+    'visibility' => '0',
+  );
+
   $export['platformoptions-facebook'] = array(
-    'cache' => -1,
+    'cache' => 8,
     'custom' => '0',
     'delta' => 'facebook',
     'module' => 'platformoptions',
@@ -175,7 +239,7 @@ function minimediabase_default_fe_block_settings() {
   );
 
   $export['platformoptions-insider1'] = array(
-    'cache' => -1,
+    'cache' => 8,
     'custom' => '0',
     'delta' => 'insider1',
     'module' => 'platformoptions',
@@ -207,7 +271,7 @@ function minimediabase_default_fe_block_settings() {
   );
 
   $export['platformoptions-mobile_article'] = array(
-    'cache' => -1,
+    'cache' => 8,
     'custom' => '0',
     'delta' => 'mobile_article',
     'module' => 'platformoptions',
@@ -239,7 +303,7 @@ function minimediabase_default_fe_block_settings() {
   );
 
   $export['platformoptions-mobile_insider'] = array(
-    'cache' => -1,
+    'cache' => 8,
     'custom' => '0',
     'delta' => 'mobile_insider',
     'module' => 'platformoptions',
@@ -271,7 +335,7 @@ function minimediabase_default_fe_block_settings() {
   );
 
   $export['platformoptions-mobile_panorama'] = array(
-    'cache' => -1,
+    'cache' => 8,
     'custom' => '0',
     'delta' => 'mobile_panorama',
     'module' => 'platformoptions',
@@ -283,7 +347,7 @@ function minimediabase_default_fe_block_settings() {
         'region' => 'header',
         'status' => '1',
         'theme' => 'arctica_subtheme',
-        'weight' => '0',
+        'weight' => '-35',
       ),
       'bartik' => array(
         'region' => '',
@@ -303,7 +367,7 @@ function minimediabase_default_fe_block_settings() {
   );
 
   $export['platformoptions-outsider1'] = array(
-    'cache' => -1,
+    'cache' => 8,
     'custom' => '0',
     'delta' => 'outsider1',
     'module' => 'platformoptions',
@@ -335,7 +399,7 @@ function minimediabase_default_fe_block_settings() {
   );
 
   $export['platformoptions-panorama1'] = array(
-    'cache' => -1,
+    'cache' => 8,
     'custom' => '0',
     'delta' => 'panorama1',
     'module' => 'platformoptions',
@@ -347,7 +411,7 @@ function minimediabase_default_fe_block_settings() {
         'region' => 'header',
         'status' => '1',
         'theme' => 'arctica_subtheme',
-        'weight' => '0',
+        'weight' => '-34',
       ),
       'bartik' => array(
         'region' => '',
@@ -367,7 +431,7 @@ function minimediabase_default_fe_block_settings() {
   );
 
   $export['platformoptions-panorama2'] = array(
-    'cache' => -1,
+    'cache' => 8,
     'custom' => '0',
     'delta' => 'panorama2',
     'module' => 'platformoptions',
