@@ -92,19 +92,10 @@ function minimediabase_metatag_export_default() {
       'og:longitude' => array(
         'value' => '',
       ),
-      'og:street-address' => array(
-        'value' => '',
-      ),
       'og:locality' => array(
         'value' => '',
       ),
       'og:region' => array(
-        'value' => '',
-      ),
-      'og:postal-code' => array(
-        'value' => '',
-      ),
-      'og:country-name' => array(
         'value' => '',
       ),
       'og:email' => array(
@@ -133,6 +124,15 @@ function minimediabase_metatag_export_default() {
       ),
       'rights' => array(
         'value' => 'MiniMedia Sweden AB + [site:name]',
+      ),
+      'og:street_address' => array(
+        'value' => '',
+      ),
+      'og:postal_code' => array(
+        'value' => '',
+      ),
+      'og:country_name' => array(
+        'value' => '',
       ),
     ),
   );
